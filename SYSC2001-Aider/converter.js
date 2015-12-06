@@ -81,14 +81,8 @@ function number(){
 	
 	
 };
-	
-	var num = new number();
 
-function print(input)
-{
-	document.write(input);
-
-};
+var num = new number();
 
 //How to use these functions
 //num.bin2Hex('1011011101011101'); returns the Hex representation of the binary number in the paramater
