@@ -1,6 +1,297 @@
-<DOCTYPE !html>
-  <head>
-  <title>SYSC2001 Aider</title></head>
-  <body>
-    TEST
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Bootstrap Google Plus Theme by @Bootply</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+                    
+    <link href="theme.css" rel="stylesheet">
+    </head>
+    
+    <body >
+  
+    
+    <div class="navbar navbar-fixed-top " id="subnav">
+      <div class="col-md-12">
+        <div class="collapse navbar-collapse" id="navbar-collapse2">
+          <ul class="nav navbar-nav navbar-right">
+           <li class="active"><a href="#">Posts</a></li>
+           <li><a href="#loginModal" role="button" data-toggle="modal">Login</a></li>
+           <li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>
+           </ul>
+        </div>  
+       </div> 
+    </div>
+
+    <!--main-->
+    <div class="container-fluid span10" id="main">
+
+      <div class = "panel panel-default col-md-2 span3" id = "left-nav">
+        <ul class="nav nav-list">
+                <li class="nav-header">Converters</li>
+                <li class="active"><a href="#base2Converters">Base 2 (Binary)</a></li>
+                <li><a href="#base4Converters">Base 4 (Quaternary)</a></li>
+                <li><a href="#">Base 8 (Octal)</a></li>
+                <li><a href="#">Base 10 (Decimal)</a></li>
+                <li><a href="#">Base 16 (Hexadecimal)</a></li>
+                <li class="nav-header">Sidebar</li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="nav-header">Sidebar</li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+      </div>
+    <div class="col-md-9 span9" style="margin-left:10px;">
+      <div class="panel panel-default">
+      <div class="row">
+      <div class="col-md-12" style="margin-top:10px;">
+        <div class="well" id="converterHeader"> 
+          <h4>Base 2 (Binary) Converters</h4>
+        </div>
+      </div>
+    </div>
+       <div class="row">
+       <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 2 (Binary) to Base 4 (Quaternary) </h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "binary2Base4Number" placeholder="Base 2 (Binary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBinary2Base4"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 4: </span>
+                <span class="media-heading" id="binary2Base4Answer"></span>   
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 2 (Binary) to Base 8 (Octal)</h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "binary2Base8Number" placeholder="Base 2 (Binary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBinary2Base8"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 8: </span>
+                <span class="media-heading" id="binary2Base8Answer"></span>   
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 col-sm-6"> 
+          <div class="well" id="steps"> 
+           <form class="form">
+            <h4>Steps</h4>
+            How to convert info goes here or maybe even steps ?
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 2 (Binary) to Base 10 (Decimal)</h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "binary2Base10Number" placeholder="Base 2 (Binary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBinary2Base10"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 10: </span>
+                <span class="media-heading" id="binary2Base10Answer"></span>    
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 2 (Binary) to Base 16 (Hex)</h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "binary2Base16Number" placeholder="Base 2 (Binary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBinary2Base16"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 16: </span>
+                <span class="media-heading" id="binary2Base16Answer"></span>    
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+      </div><!--/row-->
+      
+      <hr>
+      </div>
+      
+      </div>
+      
+
+      <div id="base4Converters" style="background:#fff; margin-top:20px;">
+      <div class="row">
+      <div class="col-md-12" style="padding-top:20px;">
+        <div class="well" id="converterHeader" > 
+          <h4>Base 4 (Binary) Converters</h4>
+        </div>
+      </div>
+    </div>
+       <div class="row">
+       <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 4 (Quaternary) to Base 2 (Binary) </h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "Base42BinaryNumber" placeholder="Base 4 (Quaternary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBase42Base2"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 2: </span>
+                <span class="media-heading" id="Base42Base2Answer"></span>    
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 4 (Quaternary) to Base 8 (Octal)</h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "Base42Base8Number" placeholder="Base 4 (Quaternary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBase42Base8"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 8: </span>
+                <span class="media-heading" id="Base42Base8Answer"></span>    
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 col-sm-6"> 
+          <div class="well" id="steps"> 
+           <form class="form">
+            <h4>Steps</h4>
+            How to convert info goes here or maybe even steps ?
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 4 (Quaternary) to Base 10 (Decimal)</h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "Base42Base10Number" placeholder="Base 4 (Quaternary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBase42Base10"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 10: </span>
+                <span class="media-heading" id="Base42Base10Answer"></span>   
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading"> <h4>Base 4 (Quaternary) to Base 16 (Hex)</h4></div>
+          <div class="panel-body">
+            <div class="input-group text-center">
+            <input type="text" class="form-control input-lg" id = "Base42Base16Number" placeholder="Base 4 (Quaternary) Number">
+            <span class="input-group-btn"><button class="btn btn-lg btn-primary" id="convertBase42Base16"type="button">Convert</button></span>
+            </div>
+
+            <div class="row answer">
+              <div class="input-group text-center">
+                <span class="media-heading">Answer In Base 16: </span>
+                <span class="media-heading" id="Base42Base16Answer"></span>   
+              </div>  
+            </div>
+            
+          </div>
+        </div>
+      </div><!--/row-->
+      
+      <hr>
+      </div>
+      
+      </div>
+
+    </div> <!-- /body-->
+
+    </div><!--/main-->
+
+    <br>
+      
+      <div class="clearfix"></div>
+        
+      <hr>
+      <div class="col-md-12 text-center"><p><a href="http://www.bootply.com/download/90113" target="_ext">Download Google Plus Style Template</a><br><a href="http://bootply.com/templates" target="_ext">More Bootstrap Templates by @Bootply</a></p></div>
+      <hr>
+      
+
+        <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="converter.js"></script>
+        <script type="text/javascript" src="jquery.easing.min.js"></script>
+        <script type="text/javascript" src="jquery.fragmentscroll.min.js"></script>
+        <script>
+          $(window).load(function() {
+        $('body').fragmentScroll();
+      });
+
+          $("#convertBinary2Base4").click(function(){
+            binaryNumber = $("#binary2Base4Number").val();
+            $("#binary2Base4Answer").text(num.bin2B4(binaryNumber));
+          });
+          $("#convertBinary2Base8").click(function(){
+             binaryNumber = $("#binary2Base8Number").val();
+             $("#binary2Base8Answer").text(num.bin2Oct(binaryNumber));
+          });
+          $("#convertBinary2Base10").click(function(){
+             binaryNumber = $("#binary2Base10Number").val();
+             $("#binary2Base10Answer").text(num.bin2Deci(binaryNumber));
+          });
+          $("#convertBinary2Base16").click(function(){
+             binaryNumber = $("#binary2Base16Number").val();
+             $("#binary2Base16Answer").text(num.bin2Hex(binaryNumber));
+          });
+        </script>
+        
+    </body>
+</html>
