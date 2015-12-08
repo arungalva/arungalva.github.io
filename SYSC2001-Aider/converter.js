@@ -81,5 +81,13 @@ function number(){
 	
 	
 };
+<<<<<<< HEAD
 	
 var num = new number();
+=======
+
+var num = new number();
+
+//How to use these functions
+//num.bin2Hex('1011011101011101'); returns the Hex representation of the binary number in the paramater
+>>>>>>> ca6d3c71c13927964378ec6766f4cabcae09c541
